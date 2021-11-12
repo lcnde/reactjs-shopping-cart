@@ -4,11 +4,12 @@ import './styles/App.scss';
 import Menu from '@material-ui/icons/Menu';
 import Home from './components/Home';
 import Shop from './components/Shop';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <div className="App">
-      <h1>Put the navbar component here</h1>
+      <Navbar />
       <BrowserRouter>
         <Routes>
           <Route path="/" exact element={<Home />} />
