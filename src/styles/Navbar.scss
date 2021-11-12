@@ -1,0 +1,50 @@
+.navbar-container {
+  background-color: #131921;
+  position: sticky;
+  top: 0;
+  height: 70px;
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 0 10px;
+
+  .forest-logo{
+    height: 40px;
+    padding: 5px;
+  }
+  .forest-logo:hover {
+    margin-left: -2px;
+    border: 2px solid white;
+  }
+
+  .input-container {
+    padding: 0 100px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+
+    input {
+      width: 100%;
+      height: 40px;
+      border: none;
+    }
+
+    .search-icon-container {
+      background-color: #febd69;
+      width: 42px;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0 5px 5px 0;
+    }
+
+    .categories {
+      background-color: #f3f3f3;
+      color: rgb(109, 109, 109);
+      padding: 0 10px;
+      display: grid;
+      align-content: center;
+      border-radius: 5px 0 0 5px;
+    }
+  }
+}

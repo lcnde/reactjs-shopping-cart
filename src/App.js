@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './styles/App.scss';
-import Menu from '@material-ui/icons/Menu';
+//import Menu from '@material-ui/icons/Menu';
 import Home from './components/Home';
 import Shop from './components/Shop';
 import Navbar from './components/Navbar';
