@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/Navbar.scss';
 import SearchIcon from '@material-ui/icons/Search';
 
-const Navbar = () => {
+const Navbar = (props) => {
   return(
     <div className="navbar-container">
       <img className="forest-logo" src="images/forest_logo.png" alt="logo" />
@@ -16,6 +16,9 @@ const Navbar = () => {
         </div>
       </div>
       <div className="cart-container">
+        <div className="items-number">
+          {props.cartNumber}
+        </div>
         <img className="shopping-cart-icon" src="images/shopping_cart.png" alt="icon" />
       </div>
     </div>
