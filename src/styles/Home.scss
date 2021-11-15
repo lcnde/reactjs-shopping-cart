@@ -30,6 +30,11 @@
       font-weight: bold;
       border-radius: 100px;
       padding: 5px 10px;
+      cursor: pointer;
+    }
+    .add-button:hover {
+      padding: 7px 12px;
+      margin-top: -2px;
     }
   }
 }

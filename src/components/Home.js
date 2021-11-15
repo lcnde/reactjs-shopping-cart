@@ -9,7 +9,7 @@ const Home = (props) => {
           <div className="product-container">
             <img src={prod.url} alt="product" />
             <span className="product-title">{prod.title}</span>
-            <span className="product-price">{prod.price}$</span>
+            <span className="product-price">{prod.price} $</span>
             <button className="add-button">Add to cart</button>
           </div>
         )
