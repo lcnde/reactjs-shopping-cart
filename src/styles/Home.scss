@@ -1,0 +1,35 @@
+.home-page {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 40px;
+  padding: 50px;
+ 
+  .product-container {
+    display: grid;
+    width: 300px;
+    justify-items: center;
+    gap: 5px;
+    height: min-content;
+    border-top: 2px solid black;
+    padding: 15px 0 0 0;
+
+
+    .product-title {
+      font-size: 20px;
+    }
+    .product-price {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    .add-button {
+      border: none;
+      background-color: #febd69;
+      color: #6d4004;
+      font-size: 16px;
+      font-weight: bold;
+      border-radius: 100px;
+      padding: 5px 10px;
+    }
+  }
+}
