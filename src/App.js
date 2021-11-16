@@ -17,16 +17,17 @@ function App() {
     {url: 'https://m.media-amazon.com/images/I/81PIXB1RBEL._AC_UL320_.jpg', title: 'Influence: The Psychology of Persuasion', price: '17,74'},
     {url: 'https://m.media-amazon.com/images/I/71j5fJvL6IL._AC_UL320_.jpg', title: 'The Definitive Book of Body Language: How to read others attitudes by their gestures', price: '9,86'},
     {url: 'https://m.media-amazon.com/images/I/81dQwQlmAXL._AC_UL320_.jpg', title: 'Rich Dad Poor Dad: What The Rich Teach Their Kids about Money That the Poor and Middle Class Do Not', price: '9,72'}
-  ])
+  ]);
+  const [checkout, setCheckout] = useState([]);
 
   return (
     <div className="App">
-      <Navbar 
-        cartNumber={cartNumber} 
-        setCartNumber={setCartNumber}
-        
-      />
       <BrowserRouter>
+        {/*The Navbar component is inside BrowserRouter so it can use the Link from react-router-dom*/}
+        <Navbar 
+          cartNumber={cartNumber} 
+          setCartNumber={setCartNumber}
+        />
         <Routes>
           <Route path="/" exact element={<Home products={products} />} />
           <Route path="/shop" element={<Shop />} />
