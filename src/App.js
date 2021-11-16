@@ -34,6 +34,7 @@ function App() {
             exact element={<Home  products={products} 
                                   checkout={checkout}
                                   setCheckout={setCheckout}
+                                  setCartNumer={setCartNumber}
                             />} 
           />
           <Route  path="/shop" 
