@@ -1,0 +1,49 @@
+.shop-page {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+
+  .cart-list {
+    padding: 50px 100px;
+    display: grid;
+    gap: 30px;
+
+    .product-container {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
+      gap: 30px;
+      .prod-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        .product-title {
+          font-size: 30px;
+        }
+        .product-price {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+
+  .proceed {
+    border-left: 1px solid gray;
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    justify-items: center;
+    grid-template-rows: auto;
+
+    button {
+      height: 30px;
+    }
+    h1 {
+      font-size: 40px;
+    }
+    span {
+      font-size: 25px;
+    }
+  }
+
+}

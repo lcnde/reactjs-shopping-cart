@@ -21,6 +21,10 @@ function App() {
   ]);
   const [checkout, setCheckout] = useState([]);
 
+  const handleCart = () => {
+    setCartNumber(checkout.length);
+  };
+
   return (
     <div className="App">
       <BrowserRouter>
@@ -34,12 +38,14 @@ function App() {
             exact element={<Home  products={products} 
                                   checkout={checkout}
                                   setCheckout={setCheckout}
-                                  setCartNumer={setCartNumber}
+                                  setCartNumber={setCartNumber}
+                                  handleCart={handleCart}
                             />} 
           />
           <Route  path="/shop" 
-                  element={<Shop 
-
+                  element={<Shop  checkout={checkout}
+                                  setCheckout={setCheckout}
+                                  setCart
                           />} 
           />
         </Routes>

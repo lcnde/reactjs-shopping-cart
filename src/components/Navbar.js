@@ -18,14 +18,14 @@ const Navbar = (props) => {
           <SearchIcon style={{ color: '#333333', fontSize: '30px' }}/>
         </div>
       </div>
-      <div className="cart-container">
-        <div className="items-number">
-          {props.cartNumber}
+      <Link to="/shop">
+        <div className="cart-container">
+          <div className="items-number">
+            {props.cartNumber}
+          </div>
+            <img className="shopping-cart-icon" src="images/shopping_cart.png" alt="icon" />
         </div>
-        <Link to="/shop">
-          <img className="shopping-cart-icon" src="images/shopping_cart.png" alt="icon" />
-        </Link>
-      </div>
+      </Link>
     </div>
   )
 }
