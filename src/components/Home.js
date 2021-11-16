@@ -6,7 +6,7 @@ const Home = (props) => {
   const addToCart = (prod) => {
     //if checkout includes prod.id then alert()
     props.setCheckout(prevState => [...prevState, {id: prod.id, url: prod.url, title: prod.title, price: prod.price}])
-    props.setCartNumer(prevState => prevState + 1)
+    props.setCartNumber(prevState => prevState + 1)
     console.log(props.checkout)
   }
 
