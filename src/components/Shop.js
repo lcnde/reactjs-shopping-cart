@@ -4,6 +4,7 @@ import '../styles/Shop.scss';
 
 const Shop = (props) => {
 
+
   return(
     <div className="shop-page">
       <div className="cart-list">
@@ -20,8 +21,7 @@ const Shop = (props) => {
         }
       </div>
       <div className="proceed">
-        <h1>Total: $
-        </h1>
+        <h1>Total: {props.totalPrice}$</h1>
         <span>Go to checkout</span>
         <button>Checkout</button>
       </div>

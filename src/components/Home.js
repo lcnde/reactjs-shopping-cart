@@ -8,10 +8,11 @@ const Home = (props) => {
     props.setCheckout(prevState => [...prevState, {id: prod.id, url: prod.url, title: prod.title, price: prod.price}])
     
   }
-
+  
   
   useEffect(() => {
     props.handleCart();
+    props.handlePrice();
     console.log(props.checkout)    
   }, [props, props.checkout]) //not sure why it had to write props twice
 
