@@ -43,7 +43,7 @@ function App() {
           setCartNumber={setCartNumber}
         />
         <Routes>
-          <Route path="/" 
+          <Route path="react-shopping-cart/" 
             exact element={<Home  products={products} 
                                   checkout={checkout}
                                   setCheckout={setCheckout}
@@ -52,7 +52,7 @@ function App() {
                                   handlePrice={handlePrice}
                             />} 
           />
-          <Route  path="/shop" 
+          <Route  path="react-shopping-cart/shop" 
                   element={<Shop  checkout={checkout}
                                   setCheckout={setCheckout}
                                   totalPrice={totalPrice}

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 const Navbar = (props) => {
   return(
     <div className="navbar-container">
-      <Link to="/">
+      <Link to="react-shopping-cart/">
         <img className="forest-logo" src="images/forest_logo.png" alt="logo" />
       </Link>
       <div className="input-container">
@@ -18,7 +18,7 @@ const Navbar = (props) => {
           <SearchIcon style={{ color: '#333333', fontSize: '30px' }}/>
         </div>
       </div>
-      <Link to="/shop">
+      <Link to="react-shopping-cart/shop">
         <div className="cart-container">
           <div className="items-number">
             {props.cartNumber}
